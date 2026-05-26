@@ -1,0 +1,1 @@
+ini adalah landing page untuk project omni-resolve ai
