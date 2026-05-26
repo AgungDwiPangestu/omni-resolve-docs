@@ -11,14 +11,12 @@ Layanan FastAPI OmniResolve-AI berjalan secara bawaan di port `8000` (`http://lo
 
 Endpoint ini digunakan oleh integrasi pihak ketiga atau Telegram Bot untuk mengirim keluhan pelanggan baru ke pipeline LangGraph.
 
-### `POST /api/v1/complaints/webhook`
+### `POST /api/v1/complaints`
 *   **Fungsi:** Mengirim pesan baru ke sistem untuk langsung dievaluasi oleh multi-agent pipeline.
 *   **Request Body:**
     ```json
     {
-      "chat_id": 12345678,
-      "username": "apguns",
-      "text": "Granit yang saya pesan ORD-QHM-010 pecah 2 dus saat pengiriman",
+      "message": "Granit yang saya pesan ORD-QHM-010 pecah 2 dus saat pengiriman",
       "session_id": "session_abc123"
     }
     ```
